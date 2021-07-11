@@ -23,7 +23,6 @@ import PageNotFound from "../Extras/PageNotFound"
 import OrderDetails from "../container/OrderDetails"
 import Contact from "../container/Contact"
 import FAQs from "../container/FAQs"
-import UnderConstruction from "../Extras/UnderConstruction"
 import UserDashboard from "../container/UserDashboard"
 
 import AdminDashboard from "../container/AdminPanel"
@@ -91,7 +90,6 @@ const Routes = () => {
                 <Route path='/admin/completed_orders' component={AdminListCompletedOrders} />
 
                 <Route path='/order_placed' component={OrderSuccessful} />
-                <Route path='/category' component={UnderConstruction} />
                 <Route component={PageNotFound} />
             </Switch>
             <Footer />

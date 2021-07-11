@@ -10,7 +10,7 @@ const HeroSection = () => {
             <Col md={7}>
                 <h2>Each Purchase will be made with pleasure.</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nostrum nulla voluptate dolor culpa animi praesentium exercitationem nisi veniam blanditiis corrupti molestias qui quod molestiae enim earum, iure eos quam neque! Ipsa, quidem non? Voluptate minima quae architecto quisquam totam nihil quidem repellat corporis possimus consequatur quasi asperiores, dolor voluptatibus?
+                WHEN IT COMES TO PRODUCT QUALITY WE MAKE NO COMPROMISES! WE USE ONLY THE BEST MATERIAL SOURCED FROM THE BEST SUPPLIERS GLOBALLY. WE UNDERSTAND WE PLAY AN IMPORTANT PART IN A HAPPY OCCASION THAT YOU ARE CELEBRATING AND WE NEVER WANT TO LET YOU DOWN. WE WORK HARD TO MAKE SURE THAT EACH PRODUCT AND EACH BOX TO BE PERFECT!
                 </p>
                 <Link to="/all_products"><button className="shopNow_btn">
                     Shop Now

@@ -24,22 +24,23 @@ const MostViewed = () => {
 
                     <Row>
                         {
-                            mostViewedProducts && mostViewedProducts.map(items => {
-                                return (
-
-                                    <Col md={3} className='overflow category_block1' key={items._id}>
-                                        <Card variant='flush' className="border-0 text-center" style={{ lineHeight: '1em', width: '18rem', overflow: 'hidden' }}>
-                                            <Link to={`/product_details/${items._id}`}>
-                                                <Card.Img variant="top" src={items.image} />
-                                            </Link>
-                                            <Card.Body>
-                                                <Card.Text>{items.name}</Card.Text>
-                                                <Card.Text>Pack of {items.product_details && items.product_details.items_in_pack}</Card.Text>
-                                                <Card.Text>₹ {items.price}</Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                )
+                            mostViewedProducts && mostViewedProducts.map((items, idx) => {
+                                if (idx + 1 <= 8) {
+                                    return (
+                                        <Col md={3} className='overflow category_block1' key={items._id}>
+                                            <Card variant='flush' className="border-0 text-center" style={{ lineHeight: '1em', width: '18rem', overflow: 'hidden' }}>
+                                                <Link to={`/product_details/${items._id}`}>
+                                                    <Card.Img variant="top" src={items.image} />
+                                                </Link>
+                                                <Card.Body>
+                                                    <Card.Text>{items.name}</Card.Text>
+                                                    <Card.Text>Pack of {items.product_details && items.product_details.items_in_pack}</Card.Text>
+                                                    <Card.Text>₹ {items.price}</Card.Text>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                    )
+                                }
                             })
                         }
 

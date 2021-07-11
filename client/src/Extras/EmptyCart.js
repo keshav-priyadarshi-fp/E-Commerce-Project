@@ -1,23 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Image } from 'react-bootstrap'
+import { Col, Image } from 'react-bootstrap'
 
 const EmptyCart = () => {
-    const Style = {
-        display:'flex',
-        flexDirection:'column',
-        justifyContent:'center',
-        alignItems:'center',
-        padding:'34px'
+    const style = {
+        width: '70%',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: '50px'
     }
     return (
-        <div style={Style}>
-            <Image fluid src='/photos/emptycart.png'/>
+        <Col style={style} className="justify-content-md-center text-center" >
+            <Image width={200} src='/photos/emptycart.png' />
+           
             <Link to='/all_products'>
                 <button className='shopNow_btn'>Continue Shopping</button>
             </Link>
-        </div>
+        </Col>
     )
 }
+
 
 export default EmptyCart

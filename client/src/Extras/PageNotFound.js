@@ -1,25 +1,25 @@
-import React, { Fragment } from 'react'
-import { Image } from 'react-bootstrap'
+import React from 'react'
+import { Col, Row, Image } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 const PageNotFound = () => {
-    const Style = {
-        display:'flex',
-        flexDirection:'column',
-        justifyContent:'center',
-        alignItems:'center',
-        padding:'34px',
-        height:'100vh'
+    const style = {
+        width:'50%',
+        marginLeft:'auto',
+        marginRight:'auto',
+        marginBottom:'50px',
+        padding:'90px'
     }
 
     return (
-        <Fragment>
-            <div style={Style}>
-                <p className='heading'>404 Page Not Found</p>
-                <Image width={300} src='/photos/notFound.png' fluid/><br/>
-                <Link to='/'><button className='page_btn'>Go Home</button></Link>
-            </div>
-        </Fragment>
+        <Col style={style} className="justify-content-md-center text-center" >
+            <p className='heading'>404 PAGE NOT FOUND</p>
+            <Image width={200} src='/photos/notFound.png' />
+            <br />
+            <Link to="/">
+                <button className='page_btn'>gO HOME</button>
+            </Link>
+        </Col>
     )
 }
 
